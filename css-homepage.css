@@ -14,14 +14,29 @@ body {
 }
 */
 
-nav {
-    background-color: white;
-}
+ /*The CSS for the grid container for the images*/
 
-.backgroundImage {
+.imageContainer {
+    display: flex;
     width: 100%;
     position: relative;
     text-align: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.column {
+    position: relative;
+    height: auto;
+    width: 25%;
+}
+
+.column:hover {
+    filter: grayscale(100%)
+}
+
+nav {
+    background-color: white;
 }
 
 .homepageTitle {
@@ -31,8 +46,9 @@ nav {
     transform: translate(-50%, -50%);
 }
 
-.mainTitle {
+.mainTitle, .mainSubtitle {
     font-size: 100px;
+    color: white;
 }
 
 .mainSubtitle {
@@ -56,6 +72,7 @@ nav {
     justify-content:space-around;
     position: absolute;
     bottom: 80;
+    z-index: 8;
 
 }
 
@@ -73,3 +90,32 @@ nav {
     background-color: lightgrey;
 }
 
+/* Pet names and backstories!  */
+.petOne, .petTwo, .petThree, .petFour {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 20%;
+    z-index: 1;
+}
+
+.petOne {
+   margin-right: 75%;
+   margin-top: 3%;
+}
+
+.petTwo {
+ margin-right: 25%;
+ margin-top: 3%;
+}
+
+.petThree {
+ margin-left: 28.5%;
+ margin-top: 3%;
+}
+
+.petFour {
+  margin-left: 77%;
+  margin-top: 2%;
+}
