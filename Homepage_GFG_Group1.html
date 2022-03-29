@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Bootstrap CSS bundle-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    <!-- Code to make it work on phones too-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Our stylesheet-->
+        <link rel="stylesheet" href="css-homepage.css">
+
+        <!--- font family: Nunito (we can change this, just put in for now)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+
+
+        <!-- nav bar code with bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <!--- Logo can be put below (where RPA text is, we can use img src)-->
+                    <a class="navbar-brand" href="#">RPA</a>
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Guide</a>
+                        </li>
+                      </ul>
+                </div>
+          </div>
+      </nav>
+    </head>
+    <body>
+      <!--- search form--->
+      <form>
+        <!--- insert code for search bar--->
+      </form>
+      
+
+      <!--- Title over background image-->
+      <div class = backgroundImage>
+        <img src="">
+      </div>
+        <div class="homepageTitle">
+          <div class="Title">
+            <h1 class="mainTitle">RPA</h1>
+          </div>
+          <div class="Subtitle">
+            <p class="mainSubtitle">Adopt a friend today</p>
+          </div>
+        </div>
+
+      <!---Gap filler for homepage, needed a div here so the buttons would sit at the bottom of the page 
+      <div class="gapFiller">
+      
+      </div>
+      --->
+
+
+      <!-- Place before end of body tag Bootstrap JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    </body>
+
+    <footer>
+      <!--- Flexbox buttons so they can be spaced evenly--->
+      <div class="animalButtons">
+        <div>
+          <button class = buttonSingular>Dogs</button>
+        </div>
+        <div> 
+          <button class = buttonSingular>Cats</button>
+        </div>
+        <div>
+          <button class = buttonSingular>Smaller pets</button>
+        </div>
+        <div>
+          <button class = buttonSingular>Horses</button>
+        </div>
+      </div>
+    </footer>
+</html>
