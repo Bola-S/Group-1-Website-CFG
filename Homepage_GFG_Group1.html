@@ -27,6 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                   <!--- Logo can be put below (where RPA text is, we can use img src)-->
                     <a class="navbar-brand" href="#">RPA</a>
+                    <img src="assets/logo.png" alt="RPA logo">
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -41,8 +42,11 @@
     </head>
     <body>
       <!--- search form--->
-      <form>
-        <!--- insert code for search bar--->
+      <form id="form" role="search" style="float:right">
+        <input type="search" id="query" name="q"
+         placeholder="Search..."
+         aria-label="Search through site content">
+        <button>Search</button>
       </form>
       
 
